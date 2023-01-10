@@ -13,3 +13,15 @@ print("IP addresses: " + iplist[3] + ", and", iplist[4]);
 
 print(f"IP addresses: {iplist[3]}, and {iplist[4]}");
 
+
+wordbank= ["indentation", "spaces"]
+
+tlgstudents= ['Albert', 'Anthony', 'Brenden', 'Craig', 'Deja', 'Elihu', 'Eric', 'Giovanni', 'James', 'Joshua', 'Maria', 'Mohamed', 'PJ', 'Philip', 'Sagan', 'Suchit', 'Meka', 'Trey', 'Winton', 'Xiuxiang', 'Yaping']
+
+wordbank.append(4);
+
+num = input("a number between 0 and 20 ");
+
+num = int(num);
+
+print(tlgstudents[num] + " always uses " + str(num) + wordbank[1] + " to indent.");

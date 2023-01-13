@@ -30,3 +30,13 @@ class Cheat_Loaded_Dice(Player):
             if self.dice[i] < 6:
                 self.dice[i] += 1
             i += 1
+
+class Mulligan(Player):
+
+
+    def cheat(self):
+        if sum(self.dice) < 9:
+           self.roll();
+
+
+

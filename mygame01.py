@@ -3,7 +3,7 @@
 import json
 
 f = open('rooms.json')
-rooms = json.load(f);
+rooms =dict( json.load(f));
 
 def showInstructions():
     """Show the game instructions when called"""

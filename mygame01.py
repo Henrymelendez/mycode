@@ -2,8 +2,6 @@
 
 import json
 
-f = open('rooms.json')
-rooms =dict( json.load(f));
 
 def showInstructions():
     """Show the game instructions when called"""
@@ -35,6 +33,12 @@ inventory = []
 
 # a dictionary linking a room to other rooms
 ## A dictionary linking a room to other rooms
+
+with open('rooms.json','r') as f:
+
+    rooms = json.load(json.dumps(f));
+
+print(rooms);
 
 
 ## A dictionary linking a room to other rooms

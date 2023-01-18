@@ -18,7 +18,7 @@ def success(name):
 @app.route("/")
 @app.route("/start")
 def start():
-    return render_template("postmakert.html")
+    return render_template("postmaker.html")
 
 @app.route("/login", methods = ["POST","GET"])
 def login():

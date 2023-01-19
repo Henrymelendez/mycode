@@ -17,7 +17,7 @@ def main():
 
         print(qna["question"])
         answers.append(qna["correct_answer"])
-
+        print("\n")
         for i in qna["incorrect_answers"]:
             answers.append(i)
         

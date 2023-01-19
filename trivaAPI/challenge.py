@@ -11,9 +11,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
 
-    ### home page with question answers and submit 
-
-
+    return render_template()    
 
 ## route for correct and return to index 
 

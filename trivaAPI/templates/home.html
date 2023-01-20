@@ -3,9 +3,9 @@
 <html>
     <h1>Quiz game Trivia <h1>
             <div name="quiz">
-                <h1> {{ question }} </h1>
+                <h3> {{ question }} </h3>
                 <form>
-                    { % for answer in answers %}
+                    {% for answer in answers %}
                     <label for= {{ answer }} class='answer'>
                         <input type='checkbox' id="{{ answer }}" name="answer" value="{{answer}}">{{ answer }}</label><br>
                     {% endfor %}

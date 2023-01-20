@@ -6,6 +6,7 @@ from flask import request
 from flask import render_template
 from flask import url_for
 import requests
+import random
 
 app = Flask(__name__)
 
@@ -33,6 +34,7 @@ def getAnswers():
         CORRECT = qna["correct_answer"]
         for i in qna["incorrect_answers"]:
             answers.append(i)
+    answer = random.shuffle(answers)
     return answers
 
 
@@ -63,7 +65,7 @@ def success():
 
 @app.route("/fail")
 def fail():
-    return "Wrong answer"
+    return render_template("fail.html")
 
 @app.route("/correct")
 def correct():

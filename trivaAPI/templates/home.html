@@ -4,7 +4,7 @@
     <h1>Quiz game Trivia <h1>
             <div name="quiz">
                 <h3> {{ question }} </h3>
-                <form>
+                <form action="/correct" method="POST">
                     {% for answer in answers %}
                     <label for= {{ answer }} class='answer'>
                         <input type='checkbox' id="{{ answer }}" name="answer" value="{{answer}}">{{ answer }}</label><br>
